@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MovieBox</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="tmdb_attribution">Movie and TV metadata provided by TMDB. This product is not endorsed or certified by TMDB.</string>
+</resources>

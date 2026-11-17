@@ -1,0 +1,13 @@
+# Android / Gradle
+.gradle/
+**/build/
+local.properties
+*.apk
+*.aab
+
+# Credentials and developer-only configuration
+.env
+.env.*
+!.env.example
+*.keystore
+*.jks

@@ -1,0 +1,11 @@
+<resources>
+    <color name="moviebox_background">#07090D</color>
+    <color name="moviebox_surface">#12151B</color>
+    <color name="moviebox_surface_raised">#1A1E26</color>
+    <color name="moviebox_blue">#2166E5</color>
+    <color name="moviebox_green">#1DD171</color>
+    <color name="moviebox_text">#F5F7FA</color>
+    <color name="moviebox_secondary">#A0A7B2</color>
+    <color name="moviebox_muted">#6E7683</color>
+    <color name="moviebox_divider">#292E38</color>
+</resources>

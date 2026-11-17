@@ -1,0 +1,12 @@
+<resources>
+    <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">@color/moviebox_green</item>
+        <item name="android:windowBackground">@color/moviebox_background</item>
+        <item name="android:statusBarColor">@color/moviebox_background</item>
+        <item name="android:navigationBarColor">@color/moviebox_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>
