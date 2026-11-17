@@ -183,22 +183,23 @@ public final class MainActivity extends Activity {
         scroller.setHorizontalScrollBarEnabled(false);
         LinearLayout chips = new LinearLayout(this);
         chips.setOrientation(LinearLayout.HORIZONTAL);
-        chips.setPadding(dp(18), dp(5), dp(12), dp(12));
+        chips.setPadding(0, 0, 0, 0);
         String[] names = {"Fight Zone", "Live", "Trending", "Movie", "TV", "Anime", "ShortTV", "Kids", "Education", "Football", "Music", "Free Novels", "Western", "Asian", "Nollywood", "Game"};
         for (int i = 0; i < names.length; i++) {
             final String name = names[i];
             boolean selected = i == 2;
-            TextView chip = text(name, 13, selected ? BG : SECONDARY, selected);
+            TextView chip = text(name, 13, selected ? WHITE : 0xCCFFFFFF, selected);
             chip.setGravity(Gravity.CENTER);
-            chip.setPadding(dp(16), dp(9), dp(16), dp(9));
-            chip.setBackground(round(selected ? GREEN : SURFACE, dp(20)));
-            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(-2, -2);
-            lp.rightMargin = dp(8);
+            chip.setPadding(dp(14), 0, dp(10), 0);
+            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(-2, dp(40));
             chips.addView(chip, lp);
             chip.setOnClickListener(v -> showCategory(name));
         }
         scroller.addView(chips);
-        content.addView(scroller);
+        content.addView(scroller, new LinearLayout.LayoutParams(-1, dp(40)));
+        View divider = new View(this);
+        divider.setBackgroundColor(0x22FFFFFF);
+        content.addView(divider, new LinearLayout.LayoutParams(-1, dp(1)));
     }
 
     private FrameLayout createHero(LinearLayout parent) {
@@ -362,24 +363,28 @@ public final class MainActivity extends Activity {
         FrameLayout imageBox = new FrameLayout(this);
         imageBox.setBackground(round(SURFACE_RAISED, dp(9)));
         imageBox.setClipToOutline(true);
-        card.addView(imageBox, new LinearLayout.LayoutParams(-1, dp(178)));
+        card.addView(imageBox, new LinearLayout.LayoutParams(-1, dp(149)));
         ImageView poster = new ImageView(this);
         poster.setScaleType(ImageView.ScaleType.CENTER_CROP);
         imageBox.addView(poster, new FrameLayout.LayoutParams(-1, -1));
         images.loadPoster(item.posterPath, poster);
+        View fade = new View(this);
+        fade.setBackground(new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM,
+                new int[]{0x00000000, 0xB8000000}));
+        imageBox.addView(fade, new FrameLayout.LayoutParams(-1, dp(48), Gravity.BOTTOM));
         if (item.rating > 0) {
-            TextView rating = text("★ " + String.format("%.1f", item.rating), 10, WHITE, true);
+            TextView rating = text("★ " + String.format("%.1f", item.rating), 10, 0xFFFFD36B, true);
             rating.setPadding(dp(7), dp(4), dp(7), dp(4));
             rating.setBackground(round(0xCC090B0F, dp(11)));
-            FrameLayout.LayoutParams ratingLp = new FrameLayout.LayoutParams(-2, -2, Gravity.TOP | Gravity.END);
-            ratingLp.setMargins(0, dp(7), dp(6), 0);
+            FrameLayout.LayoutParams ratingLp = new FrameLayout.LayoutParams(-2, -2, Gravity.BOTTOM | Gravity.END);
+            ratingLp.setMargins(0, 0, dp(6), dp(7));
             imageBox.addView(rating, ratingLp);
         }
         TextView title = text(item.title, 12, WHITE, true);
-        title.setMaxLines(1);
+        title.setMaxLines(2);
         title.setEllipsize(android.text.TextUtils.TruncateAt.END);
         LinearLayout.LayoutParams titleLp = new LinearLayout.LayoutParams(-1, -2);
-        titleLp.topMargin = dp(7);
+        titleLp.topMargin = dp(6);
         card.addView(title, titleLp);
         TextView subtitle = text((item.year().isEmpty() ? "" : item.year() + "  •  ") + ("tv".equals(item.mediaType) ? "Series" : "Movie"), 10, MUTED, false);
         subtitle.setMaxLines(1);
@@ -605,7 +610,8 @@ public final class MainActivity extends Activity {
 
         FrameLayout playerSurface = new FrameLayout(this);
         playerSurface.setBackgroundColor(Color.BLACK);
-        LinearLayout.LayoutParams surfaceLp = new LinearLayout.LayoutParams(-1, dp(235));
+        int playerHeight = Math.round(getResources().getDisplayMetrics().widthPixels * 9f / 16f);
+        LinearLayout.LayoutParams surfaceLp = new LinearLayout.LayoutParams(-1, playerHeight);
         surfaceLp.topMargin = dp(12);
         page.addView(playerSurface, surfaceLp);
         ImageView backdrop = new ImageView(this);
@@ -675,7 +681,7 @@ public final class MainActivity extends Activity {
         ScrollView scroll = newScrollPage();
         LinearLayout content = verticalContent(scroll);
         addPageHeader(content, "Short TV", () -> showHome());
-        TextView intro = text("Short-form stories, ready when you are", 13, SECONDARY, false);
+        TextView intro = text("ShortTV catalogue preview  •  Playback coming soon", 13, SECONDARY, false);
         intro.setPadding(dp(18), 0, dp(18), dp(16));
         content.addView(intro);
         addCatalogSection(content, "Popular Series", "tv");
