@@ -1,0 +1,101 @@
+package com.transsion.transfer.wifi.connect.adapter;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.p1004lifecycle.Lifecycle;
+import com.vungle.ads.internal.protos.Sdk$SDKError;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.AbstractC24917a2;
+import kotlinx.coroutines.AbstractC25088i;
+import kotlinx.coroutines.C25220y0;
+import kotlinx.coroutines.InterfaceC25149n0;
+
+/* JADX INFO: loaded from: classes6.dex */
+@Metadata(m97099d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, m97100d2 = {"Lkotlinx/coroutines/n0;", "", "<anonymous>", "(Lkotlinx/coroutines/n0;)V"}, m97101k = 3, m97102mv = {2, 1, 0})
+@DebugMetadata(m97636c = "com.transsion.transfer.wifi.connect.adapter.WifiNetworkSpecifierAdapter$doClose$1$1", m97637f = "WifiNetworkSpecifierAdapter.kt", m97638l = {Sdk$SDKError.Reason.INVALID_LOG_ERROR_ENDPOINT_VALUE}, m97639m = "invokeSuspend")
+final class WifiNetworkSpecifierAdapter$doClose$1$1 extends SuspendLambda implements Function2<InterfaceC25149n0, Continuation<? super Unit>, Object> {
+    int label;
+    final /* synthetic */ WifiNetworkSpecifierAdapter this$0;
+
+    /* JADX INFO: renamed from: com.transsion.transfer.wifi.connect.adapter.WifiNetworkSpecifierAdapter$doClose$1$1$1 */
+    @Metadata(m97099d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, m97100d2 = {"Lkotlinx/coroutines/n0;", "", "<anonymous>", "(Lkotlinx/coroutines/n0;)V"}, m97101k = 3, m97102mv = {2, 1, 0})
+    @DebugMetadata(m97636c = "com.transsion.transfer.wifi.connect.adapter.WifiNetworkSpecifierAdapter$doClose$1$1$1", m97637f = "WifiNetworkSpecifierAdapter.kt", m97638l = {}, m97639m = "invokeSuspend")
+    static final class C200651 extends SuspendLambda implements Function2<InterfaceC25149n0, Continuation<? super Unit>, Object> {
+        int label;
+        final /* synthetic */ WifiNetworkSpecifierAdapter this$0;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        C200651(WifiNetworkSpecifierAdapter wifiNetworkSpecifierAdapter, Continuation<? super C200651> continuation) {
+            super(2, continuation);
+            this.this$0 = wifiNetworkSpecifierAdapter;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+            return new C200651(this.this$0, continuation);
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(InterfaceC25149n0 interfaceC25149n0, Continuation<? super Unit> continuation) {
+            return ((C200651) create(interfaceC25149n0, continuation)).invokeSuspend(Unit.f75682a);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        public final Object invokeSuspend(Object obj) throws Throwable {
+            Lifecycle lifecycle;
+            IntrinsicsKt.m97630f();
+            if (this.label != 0) {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            ResultKt.m97107b(obj);
+            AppCompatActivity appCompatActivityM83323f = this.this$0.m83323f();
+            if (appCompatActivityM83323f != null && (lifecycle = appCompatActivityM83323f.getLifecycle()) != null) {
+                lifecycle.mo14835d(this.this$0.f63905h);
+            }
+            return Unit.f75682a;
+        }
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    WifiNetworkSpecifierAdapter$doClose$1$1(WifiNetworkSpecifierAdapter wifiNetworkSpecifierAdapter, Continuation<? super WifiNetworkSpecifierAdapter$doClose$1$1> continuation) {
+        super(2, continuation);
+        this.this$0 = wifiNetworkSpecifierAdapter;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        return new WifiNetworkSpecifierAdapter$doClose$1$1(this.this$0, continuation);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(InterfaceC25149n0 interfaceC25149n0, Continuation<? super Unit> continuation) {
+        return ((WifiNetworkSpecifierAdapter$doClose$1$1) create(interfaceC25149n0, continuation)).invokeSuspend(Unit.f75682a);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) throws Throwable {
+        Object objF = IntrinsicsKt.m97630f();
+        int i11 = this.label;
+        if (i11 == 0) {
+            ResultKt.m97107b(obj);
+            AbstractC24917a2 abstractC24917a2M99269c = C25220y0.m99269c();
+            C200651 c200651 = new C200651(this.this$0, null);
+            this.label = 1;
+            if (AbstractC25088i.m98910g(abstractC24917a2M99269c, c200651, this) == objF) {
+                return objF;
+            }
+        } else {
+            if (i11 != 1) {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            ResultKt.m97107b(obj);
+        }
+        return Unit.f75682a;
+    }
+}

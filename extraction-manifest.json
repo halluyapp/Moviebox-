@@ -1,0 +1,52 @@
+{
+  "source_apk": "MovieBoxv3.0.16.0616.03[PR3MIUM].apk",
+  "scope": "frontend-ui-only",
+  "excluded": [
+    "dex",
+    "native-libraries",
+    "offline-content",
+    "keys-and-licenses",
+    "ad-network-payloads",
+    "backend/data-heavy-assets"
+  ],
+  "modules": [
+    "com/community",
+    "com/transsion/home",
+    "com/transsion/homeapi",
+    "com/transsion/moviedetail",
+    "com/transsion/moviedetailapi",
+    "com/transsion/search",
+    "com/transsion/search_pugc",
+    "com/transsion/usercenter",
+    "com/transsion/usercenterapi",
+    "com/transsion/room",
+    "com/transsion/postdetail",
+    "com/transsion/postdetailapi",
+    "com/transsion/shorttv",
+    "com/transsion/shorttv_pugc",
+    "com/transsion/ugcvideodetail",
+    "com/transsion/videodetail",
+    "com/transsion/player",
+    "com/transsion/play",
+    "com/transsion/subtitle",
+    "com/transsion/subtitle_download",
+    "com/transsion/baseui",
+    "com/transsion/mbwidget",
+    "com/transsion/member",
+    "com/transsion/memberapi",
+    "com/transsion/rewardscenter",
+    "com/transsion/rewardscenterapi",
+    "com/transsion/subroom",
+    "com/transsion/transfer",
+    "com/transsion/publish",
+    "com/transsion/share",
+    "com/transsion/audio"
+  ],
+  "counts": {
+    "layouts": 1672,
+    "ui_resources": 2278,
+    "fonts": 5,
+    "java_source": 3370,
+    "smali": 6163
+  }
+}

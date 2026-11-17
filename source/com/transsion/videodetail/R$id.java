@@ -1,0 +1,125 @@
+package com.transsion.videodetail;
+
+/* JADX INFO: loaded from: classes7.dex */
+public final class R$id {
+    public static int activity_tip = 2131361915;
+    public static int appBar = 2131361994;
+    public static int barrierMovieCoverBottom = 2131362032;
+    public static int btn_download = 2131362160;
+    public static int cdl = 2131362224;
+    public static int container = 2131362354;
+    public static int divider = 2131362429;
+    public static int emptyView = 2131362482;
+    public static int extension_container = 2131362590;
+
+    /* JADX INFO: renamed from: fl */
+    public static int f65612fl = 2131362644;
+    public static int flBottomAdLayout = 2131362648;
+    public static int flFullPlayerContainer = 2131362656;
+    public static int flMusicContainer = 2131362661;
+    public static int flPlayer = 2131362664;
+    public static int flTopAdLayout = 2131362676;
+    public static int fl_bottom_dialog_container = 2131362688;
+    public static int fl_full_player_container = 2131362703;
+    public static int fl_player = 2131362717;
+    public static int fl_season_container = 2131362722;
+    public static int game_container = 2131362760;
+    public static int innerIcon = 2131362959;
+    public static int innerTvInfo = 2131362963;
+    public static int innerTvName = 2131362964;
+    public static int innerTvTitle = 2131362965;
+    public static int ivBack = 2131363039;
+    public static int ivClose = 2131363058;
+    public static int ivCover = 2131363065;
+    public static int ivDance = 2131363070;
+    public static int ivLoop = 2131363105;
+    public static int ivMovieContent = 2131363111;
+    public static int ivMovieCover = 2131363112;
+    public static int ivMovieCoverMask = 2131363113;
+    public static int ivNextPlay = 2131363117;
+    public static int ivShuffle = 2131363150;
+    public static int ivState = 2131363154;
+    public static int iv_close = 2131363221;
+    public static int iv_download_status = 2131363251;
+    public static int iv_preview = 2131363368;
+    public static int iv_publish = 2131363372;
+    public static int iv_score = 2131363402;
+    public static int iv_seasons = 2131363408;
+    public static int iv_subtitle_tag = 2131363432;
+    public static int layout_sync_adjust = 2131363537;
+    public static int likedRv = 2131363561;
+    public static int llEmpty = 2131363589;
+    public static int llEmptyLayout = 2131363590;
+    public static int llLanguage = 2131363594;
+    public static int ll_score = 2131363674;
+    public static int loadingView = 2131363694;
+    public static int magic_indicator = 2131363724;
+    public static int nativeSlideshowView = 2131364070;
+    public static int operateView = 2131364174;
+    public static int pb_loading = 2131364209;
+    public static int post_detail_loading = 2131364287;
+    public static int rec_view_pager = 2131364396;
+    public static int resourceDetectorGroup = 2131364412;
+    public static int resourceRv = 2131364414;
+
+    /* JADX INFO: renamed from: rv */
+    public static int f65613rv = 2131364477;
+    public static int subjectDetailLayout = 2131364796;
+    public static int subjectDetailLayoutV2 = 2131364797;
+    public static int toolbar_layout = 2131364929;
+    public static int tvAuthor = 2131365016;
+    public static int tvExploreNow = 2131365084;
+    public static int tvLanguage = 2131365118;
+    public static int tvMovieContent = 2131365140;
+    public static int tvMovieInfo = 2131365142;
+    public static int tvMovieTitle = 2131365144;
+    public static int tvName = 2131365149;
+    public static int tvNameSelected = 2131365150;
+    public static int tvPlayAll = 2131365167;
+    public static int tvTitle = 2131365254;
+    public static int tvVideosCount = 2131365293;
+    public static int tv_all_episodes = 2131365309;
+    public static int tv_country = 2131365359;
+    public static int tv_header_toolbar = 2131365430;
+    public static int tv_loading = 2131365476;
+    public static int tv_more = 2131365490;
+    public static int tv_name = 2131365495;
+    public static int tv_post = 2131365538;
+    public static int tv_restrict = 2131365584;
+    public static int tv_score = 2131365598;
+    public static int tv_seasons = 2131365606;
+    public static int tv_seasons_2 = 2131365607;
+    public static int tv_subtitle_more = 2131365661;
+    public static int tv_subtitle_tag = 2131365662;
+    public static int tv_time = 2131365674;
+    public static int tv_title = 2131365687;
+    public static int tv_type = 2131365706;
+    public static int vTopSpace = 2131365789;
+    public static int v_detail_hot_zone = 2131365820;
+    public static int v_player_bottom_space = 2131365854;
+    public static int v_seasons_line_2 = 2131365868;
+    public static int v_top_space = 2131365894;
+    public static int view1 = 2131365941;
+    public static int view10 = 2131365942;
+    public static int view101 = 2131365943;
+    public static int view11 = 2131365944;
+    public static int view2 = 2131365945;
+    public static int view3 = 2131365946;
+    public static int view4 = 2131365947;
+    public static int view6 = 2131365949;
+    public static int view71 = 2131365950;
+    public static int view72 = 2131365951;
+    public static int view73 = 2131365952;
+    public static int view74 = 2131365953;
+    public static int view81 = 2131365954;
+    public static int view82 = 2131365955;
+    public static int view83 = 2131365956;
+    public static int view84 = 2131365957;
+    public static int view91 = 2131365960;
+    public static int viewMask = 2131365984;
+    public static int viewTopBg = 2131366000;
+    public static int viewTopPlaceholder = 2131366001;
+
+    private R$id() {
+    }
+}

@@ -1,0 +1,88 @@
+package com.transsion.shorttv_pugc.p317ui.widget;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+import androidx.appcompat.widget.LinearLayoutCompat;
+import com.therouter.TheRouter;
+import com.therouter.router.Navigator;
+import com.transsion.shorttv.R$layout;
+import com.vungle.ads.internal.protos.Sdk$SDKMetric;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import pg.C26866a;
+import rs.C27341g0;
+
+/* JADX INFO: loaded from: classes6.dex */
+@Metadata(m97099d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u0000 \u00132\u00020\u0001:\u0001\u0010B!\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\u0006\u0010\u0007\u001a\u00020\u0006¢\u0006\u0004\b\b\u0010\tB\u0011\b\u0016\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\b\u0010\nB\u001b\b\u0016\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004¢\u0006\u0004\b\b\u0010\u000bJ\u000f\u0010\r\u001a\u00020\fH\u0002¢\u0006\u0004\b\r\u0010\u000eR\u0014\u0010\u0012\u001a\u00020\u000f8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011¨\u0006\u0014"}, m97100d2 = {"Lcom/transsion/shorttv_pugc/ui/widget/ShortTvCategoryView;", "Landroidx/appcompat/widget/LinearLayoutCompat;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "", "defStyleAttr", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "(Landroid/content/Context;)V", "(Landroid/content/Context;Landroid/util/AttributeSet;)V", "", "g", "()V", "Lrs/g0;", "a", "Lrs/g0;", "viewBinding", "Companion", "shortTvLib_release"}, m97101k = 1, m97102mv = {2, 1, 0}, m97104xi = Sdk$SDKMetric.SDKMetricType.AD_SHOW_TO_VALIDATION_DURATION_MS_VALUE)
+public final class ShortTvCategoryView extends LinearLayoutCompat {
+
+    /* JADX INFO: renamed from: a, reason: from kotlin metadata */
+    private final C27341g0 viewBinding;
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public ShortTvCategoryView(Context context) {
+        this(context, null);
+        Intrinsics.m97802h(context, "context");
+    }
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public ShortTvCategoryView(Context context, AttributeSet attributeSet) {
+        this(context, attributeSet, 0);
+        Intrinsics.m97802h(context, "context");
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ShortTvCategoryView(Context context, AttributeSet attributeSet, int i11) {
+        super(context, attributeSet, i11);
+        Intrinsics.m97802h(context, "context");
+        View.inflate(context, R$layout.pugc_short_tv_layout_category, this);
+        C27341g0 c27341g0M106451a = C27341g0.m106451a(this);
+        Intrinsics.m97801g(c27341g0M106451a, "bind(...)");
+        this.viewBinding = c27341g0M106451a;
+        m81193g();
+    }
+
+    /* JADX INFO: renamed from: g */
+    private final void m81193g() {
+        this.viewBinding.f83160d.setOnClickListener(new View.OnClickListener() { // from class: com.transsion.shorttv_pugc.ui.widget.h
+            @Override // android.view.View.OnClickListener
+            public final void onClick(View view) {
+                ShortTvCategoryView.m81194h(this.f62413a, view);
+            }
+        });
+        this.viewBinding.f83159c.setOnClickListener(new View.OnClickListener() { // from class: com.transsion.shorttv_pugc.ui.widget.i
+            @Override // android.view.View.OnClickListener
+            public final void onClick(View view) {
+                ShortTvCategoryView.m81195i(this.f62415a, view);
+            }
+        });
+        this.viewBinding.f83158b.setOnClickListener(new View.OnClickListener() { // from class: com.transsion.shorttv_pugc.ui.widget.j
+            @Override // android.view.View.OnClickListener
+            public final void onClick(View view) {
+                ShortTvCategoryView.m81196j(this.f62417a, view);
+            }
+        });
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* JADX INFO: renamed from: h */
+    public static final void m81194h(ShortTvCategoryView shortTvCategoryView, View view) {
+        C26866a.a.m104898f(C26866a.f81698a, "ShortTVDiscoverCategoryView", "click Latest", false, 4, null);
+        Navigator.m61845x(TheRouter.m61773c("/home/playlist").m61857K("label", "fresh-releases-list").m61857K("category", "TVSHOW").m61857K("recType", "OPT").m61857K("topIds", null), shortTvCategoryView.getContext(), null, 2, null);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* JADX INFO: renamed from: i */
+    public static final void m81195i(ShortTvCategoryView shortTvCategoryView, View view) {
+        C26866a.a.m104898f(C26866a.f81698a, "ShortTVDiscoverCategoryView", "click Hottest", false, 4, null);
+        Navigator.m61845x(TheRouter.m61773c("/home/playlist").m61857K("label", "must-watch-list").m61857K("category", "TVSHOW").m61857K("recType", "OPT").m61857K("topIds", null), shortTvCategoryView.getContext(), null, 2, null);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* JADX INFO: renamed from: j */
+    public static final void m81196j(ShortTvCategoryView shortTvCategoryView, View view) {
+        C26866a.a.m104898f(C26866a.f81698a, "ShortTVDiscoverCategoryView", "click All", false, 4, null);
+        Navigator.m61845x(TheRouter.m61773c("/home/movieFilter").m61852F("tabId", 7).m61857K("tabCode", "ShortTV").m61872z("showViewPager", false), shortTvCategoryView.getContext(), null, 2, null);
+    }
+}
